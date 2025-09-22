@@ -98,7 +98,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-full max-w-lg mx-auto">
                 <img 
-                  src="/logo-ecobfit.png" 
+                  src="/logo-ecobfit-new.png" 
                   alt="Produtos EcoBFit à base de babaçu" 
                   className="w-full h-auto drop-shadow-2xl"
                 />
