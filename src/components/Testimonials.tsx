@@ -1,43 +1,53 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { useState } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const Testimonials = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const testimonials = [
     {
       name: "Amanda Hellen",
       text: "Esse doce é muito, muito gostoso! Super recomendo",
       rating: 5,
-      product: "Doce de babaçu"
+      product: "Doce de babaçu",
+      image: "/depoimentos/depoimento1.jpg"
     },
     {
       name: "Cliente satisfeita",
       text: "Muito gostoso! Realmente, uma delícia!",
       rating: 5,
-      product: "Bolo de babaçu"
+      product: "Bolo de babaçu",
+      image: "/depoimentos/depoimento2.jpg"
     },
     {
       name: "Luana",
       text: "A Professora Leanne me deu um doce de vcs e eu amei",
       rating: 5,
-      product: "Doce de babaçu"
+      product: "Doce de babaçu",
+      image: "/depoimentos/depoimento3.jpg"
     },
     {
       name: "Luana",
-      text: "Adorei a estética...",
+      text: "Adorei a estética... sempre compro em garrafa Pet e fica um grude só kkkkk esse não conheço",
       rating: 5,
-      product: "Óleo de babaçu"
+      product: "Óleo de babaçu",
+      image: "/depoimentos/depoimento4.jpg"
     },
     {
-      name: "Cliente satisfeito",
-      text: "Os produtos são maravilhosos",
+      name: "Profenoque",
+      text: "Os produtos são maravilhosos! 😊😊 amei",
       rating: 5,
-      product: "Produtos gerais"
+      product: "Produtos gerais",
+      image: "/depoimentos/depoimentos5e6.jpg"
     },
     {
       name: "Hatawma",
-      text: "Os produtos são uma delícia!",
+      text: "Os produtos são uma delícia! 😊😊",
       rating: 5,
-      product: "Produtos gerais"
+      product: "Produtos gerais",
+      image: "/depoimentos/depoimentos5e6.jpg"
     }
   ];
 
@@ -85,6 +95,18 @@ const Testimonials = () => {
                   {renderStars(testimonial.rating)}
                 </div>
 
+                {/* Testimonial Image */}
+                {testimonial.image && (
+                  <div className="mb-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={`Depoimento de ${testimonial.name}`}
+                      className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={() => setSelectedImage(testimonial.image)}
+                    />
+                  </div>
+                )}
+
                 {/* Testimonial Text */}
                 <blockquote className="text-muted-foreground mb-4 italic leading-relaxed">
                   "{testimonial.text}"
@@ -119,6 +141,19 @@ const Testimonials = () => {
             </a>
           </div>
         </div>
+
+        {/* Image Modal */}
+        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+          <DialogContent className="max-w-3xl w-full p-0">
+            {selectedImage && (
+              <img 
+                src={selectedImage} 
+                alt="Depoimento expandido"
+                className="w-full h-auto rounded-lg"
+              />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
