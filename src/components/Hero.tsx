@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/hero-background-new.jpg" 
+          src="/hero-background-final.png" 
           alt="Palmeiras de babaçu"
           className="w-full h-full object-cover"
         />
