@@ -50,9 +50,12 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12 relative">
+          {/* Content Background */}
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-sm rounded-3xl -z-10"></div>
+          
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in">
+          <div className="flex-1 text-center lg:text-left animate-fade-in relative z-10 p-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               EcoBFit
             </h1>
