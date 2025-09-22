@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img 
-                src="/logo-ecobfit-new.png" 
+                src="/logo-ecobfit.png"
                 alt="EcoBFit" 
                 className="h-12 w-auto"
               />
