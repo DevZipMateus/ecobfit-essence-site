@@ -31,8 +31,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/hero-background.jpg" 
-          alt="Palmeiras de babaçu" 
+          src="/hero-background-new.jpg" 
+          alt="Palmeiras de babaçu"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-nature/80"></div>
