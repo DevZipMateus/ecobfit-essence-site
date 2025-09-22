@@ -28,8 +28,15 @@ const Hero = () => {
 
   return (
     <section id="home" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-nature"></div>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/hero-background.jpg" 
+          alt="Palmeiras de babaçu" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-nature/80"></div>
+      </div>
       
       {/* Decorative Elements */}
       <div className="absolute top-1/4 left-10 animate-float">
