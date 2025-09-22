@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Leaf, Heart, Shield } from "lucide-react";
-
 const Hero = () => {
   const handleContactClick = () => {
     const element = document.querySelector("#contact");
@@ -13,7 +12,6 @@ const Hero = () => {
       });
     }
   };
-
   const handleProductsClick = () => {
     const element = document.querySelector("#products");
     if (element) {
@@ -25,16 +23,10 @@ const Hero = () => {
       });
     }
   };
-
-  return (
-    <section id="home" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
+  return <section id="home" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src="/hero-background-final.png" 
-          alt="Palmeiras de babaçu"
-          className="w-full h-full object-cover"
-        />
+        <img src="/hero-background-final.png" alt="Palmeiras de babaçu" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-nature/80"></div>
       </div>
       
@@ -42,10 +34,14 @@ const Hero = () => {
       <div className="absolute top-1/4 left-10 animate-float">
         <Leaf className="w-8 h-8 text-primary/30" />
       </div>
-      <div className="absolute bottom-1/3 right-20 animate-float" style={{ animationDelay: "1s" }}>
+      <div className="absolute bottom-1/3 right-20 animate-float" style={{
+      animationDelay: "1s"
+    }}>
         <Heart className="w-6 h-6 text-accent/40" />
       </div>
-      <div className="absolute top-1/2 right-10 animate-float" style={{ animationDelay: "2s" }}>
+      <div className="absolute top-1/2 right-10 animate-float" style={{
+      animationDelay: "2s"
+    }}>
         <Shield className="w-7 h-7 text-primary/20" />
       </div>
 
@@ -65,19 +61,10 @@ const Hero = () => {
             </h2>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button 
-                onClick={handleProductsClick}
-                size="lg" 
-                className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-natural px-8 py-3"
-              >
+              <Button onClick={handleProductsClick} size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-natural px-8 py-3">
                 Conheça nossos produtos
               </Button>
-              <Button 
-                onClick={handleContactClick}
-                variant="outline" 
-                size="lg"
-                className="border-primary/60 text-primary hover:bg-primary/10 hover:border-primary px-8 py-3"
-              >
+              <Button onClick={handleContactClick} variant="outline" size="lg" className="border-primary/60 text-primary hover:bg-primary/10 hover:border-primary px-8 py-3">
                 Fale conosco
               </Button>
             </div>
@@ -86,19 +73,19 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>100% natural</span>
+                <span className="text-zinc-50">100% natural</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
-                <span>Sem lactose</span>
+                <span className="text-slate-50">Sem lactose</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary-glow rounded-full"></div>
-                <span>Sem glúten</span>
+                <span className="text-slate-50">Sem glúten</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
-                <span>Sustentável</span>
+                <span className="text-slate-50">Sustentável</span>
               </div>
             </div>
           </div>
@@ -107,11 +94,7 @@ const Hero = () => {
           <div className="flex-1 animate-scale-in">
             <div className="relative">
               <div className="w-full max-w-lg mx-auto">
-                <img 
-                  src="/logo-ecobfit-new.png" 
-                  alt="Produtos EcoBFit à base de babaçu" 
-                  className="w-full h-auto drop-shadow-2xl"
-                />
+                <img src="/logo-ecobfit-new.png" alt="Produtos EcoBFit à base de babaçu" className="w-full h-auto drop-shadow-2xl" />
               </div>
               {/* Floating elements around image */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
@@ -120,8 +103,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
