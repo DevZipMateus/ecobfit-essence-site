@@ -101,7 +101,7 @@ const Testimonials = () => {
                     <img 
                       src={testimonial.image} 
                       alt={`Depoimento de ${testimonial.name}`}
-                      className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+                      className="w-full h-auto max-h-48 object-contain rounded-lg cursor-pointer hover:opacity-80 transition-opacity bg-muted/10"
                       onClick={() => setSelectedImage(testimonial.image)}
                     />
                   </div>
