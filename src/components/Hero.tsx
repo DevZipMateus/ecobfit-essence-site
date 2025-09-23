@@ -55,7 +55,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               EcoBFit
             </h1>
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-foreground/80 mb-8 leading-relaxed">
+            <h2 className="text-xl md:text-2xl mb-8 leading-relaxed text-zinc-50 lg:text-3xl">
               Alimentos inovadores à base de babaçu, livres de lactose, caseína e glúten. 
               Promovendo inclusão alimentar, sustentabilidade e saudabilidade.
             </h2>
