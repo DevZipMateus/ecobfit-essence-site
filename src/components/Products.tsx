@@ -15,7 +15,8 @@ const Products = () => {
       name: "Doce pastoso de babaçu",
       description: "Delicioso doce cremoso feito com a polpa natural do babaçu, sem aditivos artificiais.",
       features: ["Sabor único", "Textura cremosa", "Combina bem como recheio ou cobertura em outras receitas"],
-      icon: <Heart className="w-8 h-8" />
+      icon: <Heart className="w-8 h-8" />,
+      image: "/produtos/doce-babacu.jpg"
     },
     {
       name: "Bolo de babaçu",
