@@ -65,8 +65,15 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button Desktop */}
-          <div className="hidden md:block">
+          {/* CTA Buttons Desktop */}
+          <div className="hidden md:flex items-center gap-3">
+            <Button 
+              onClick={() => window.open('https://forms.gle/DUcRcqGcMJhyhhYW9', '_blank')}
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/10"
+            >
+              Cadastre-se aqui
+            </Button>
             <Button 
               onClick={() => handleNavClick("#contact")}
               className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-natural"
@@ -99,8 +106,15 @@ const Header = () => {
                 </button>
               ))}
               <Button 
+                onClick={() => window.open('https://forms.gle/DUcRcqGcMJhyhhYW9', '_blank')}
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/10 w-full"
+              >
+                Cadastre-se aqui
+              </Button>
+              <Button 
                 onClick={() => handleNavClick("#contact")}
-                className="mt-4 bg-primary hover:bg-primary-glow text-primary-foreground w-full"
+                className="bg-primary hover:bg-primary-glow text-primary-foreground w-full"
               >
                 Fale conosco
               </Button>
