@@ -26,7 +26,7 @@ const Hero = () => {
   return <section id="home" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src="/hero-background-final.png" alt="Palmeiras de babaçu" className="w-full h-full object-cover" />
+        <img src="/hero-background-new2.jpg" alt="Palmeiras de babaçu" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-nature/80"></div>
       </div>
       
