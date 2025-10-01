@@ -57,6 +57,17 @@ const Achievements = () => {
           </p>
         </div>
 
+        {/* Timeline Image */}
+        <div className="flex justify-center mb-16 animate-fade-in">
+          <div className="max-w-3xl w-full">
+            <img 
+              src="/conquistas/timeline.png" 
+              alt="Linha do tempo das conquistas da EcoBFit"
+              className="w-full h-auto rounded-lg shadow-card"
+            />
+          </div>
+        </div>
+
         {/* Timeline */}
         <div className="max-w-4xl mx-auto space-y-8">
           {milestones.map((milestone, index) => (
