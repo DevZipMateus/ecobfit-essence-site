@@ -48,7 +48,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 relative">
           {/* Content Background */}
-          <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-3xl -z-10"></div>
+          <div className="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-3xl -z-10"></div>
           
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in relative z-10 p-8">
