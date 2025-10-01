@@ -94,7 +94,7 @@ const Hero = () => {
           <div className="flex-1 animate-scale-in">
             <div className="relative">
               <div className="w-full max-w-lg mx-auto">
-                <img src="/logo-ecobfit-new.png" alt="Produtos EcoBFit à base de babaçu" className="w-full h-auto drop-shadow-2xl" />
+                <img src="/logo-ecobfit-hero.png" alt="Produtos EcoBFit à base de babaçu" className="w-full h-auto drop-shadow-2xl" />
               </div>
               {/* Floating elements around image */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
