@@ -8,7 +8,8 @@ const Products = () => {
       name: "Óleo extravirgem de babaçu",
       description: "Extraído por prensagem a frio, preservando todos os nutrientes naturais do babaçu.",
       features: ["Prensagem a frio", "100% puro", "Naturalmente rico em ácidos graxos de cadeia média (TCM), como láurico e mirístico", "Versátil: pode ser utilizado na culinária, cosmética artesanal e cuidados com a pele"],
-      icon: <Leaf className="w-8 h-8" />
+      icon: <Leaf className="w-8 h-8" />,
+      image: "/produtos/oleo-babacu.jpg"
     },
     {
       name: "Doce pastoso de babaçu",
