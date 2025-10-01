@@ -6,6 +6,7 @@ import Achievements from "@/components/Achievements";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import PartnerBanner from "@/components/PartnerBanner";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <Gallery />
       <Testimonials />
       <Contact />
+      <PartnerBanner />
       <Footer />
       <WhatsAppFloat />
     </div>
