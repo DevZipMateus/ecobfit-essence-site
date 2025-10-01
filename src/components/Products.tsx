@@ -22,7 +22,8 @@ const Products = () => {
       name: "Bolo de babaçu",
       description: "Disponível com e sem açúcar, perfeito para quem busca sabor e saúde em cada fatia.",
       features: ["Com ou sem açúcar", "Sem glúten", "Fofinho e saboroso", "Feito sem utilizar ovo"],
-      icon: <ShieldCheck className="w-8 h-8" />
+      icon: <ShieldCheck className="w-8 h-8" />,
+      image: "/produtos/bolo-babacu.jpg"
     },
     {
       name: "Sorvetes",
