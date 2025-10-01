@@ -32,7 +32,8 @@ const Products = () => {
       name: "Cookie de babaçu",
       description: "Cookies crocantes e saborosos, ideais para um lanche saudável a qualquer hora.",
       features: ["Crocante", "Sem glúten", "Fonte de fibras"],
-      icon: <Heart className="w-8 h-8" />
+      icon: <Heart className="w-8 h-8" />,
+      image: "/produtos/cookies-babacu.jpg"
     }
   ];
 
@@ -79,6 +80,17 @@ const Products = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
+                {/* Product Image */}
+                {product.image && (
+                  <div className="mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-48 object-cover"
+                    />
+                  </div>
+                )}
+                
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:text-primary-glow transition-colors">
                     {product.icon}
