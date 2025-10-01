@@ -29,7 +29,8 @@ const Products = () => {
       name: "Sorvetes",
       description: "Sorvetes cremosos de babaçu puro ou saborizados, uma opção refrescante e nutritiva.",
       features: ["Base vegetal", "Sem lactose", "Diversos sabores"],
-      icon: <Leaf className="w-8 h-8" />
+      icon: <Leaf className="w-8 h-8" />,
+      image: "/produtos/sorvetes-babacu.png"
     },
     {
       name: "Cookie de babaçu",
