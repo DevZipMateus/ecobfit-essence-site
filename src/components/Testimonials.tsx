@@ -8,46 +8,39 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Amanda Hellen",
+      name: "Cliente satisfeito",
       text: "Esse doce é muito, muito gostoso! Super recomendo",
       rating: 5,
       product: "Doce de babaçu",
       image: "/depoimentos/depoimento1.jpg"
     },
     {
-      name: "Cliente satisfeita",
-      text: "Muito gostoso! Realmente, uma delícia!",
-      rating: 5,
-      product: "Bolo de babaçu",
-      image: "/depoimentos/depoimento2.jpg"
-    },
-    {
-      name: "Luana",
-      text: "A Professora Leanne me deu um doce de vcs e eu amei",
+      name: "Cliente satisfeito",
+      text: "Professora Leanne me deu um doce de vcs e eu amei. Que maravilha ❤️. Já segui a página pra ficar de olho",
       rating: 5,
       product: "Doce de babaçu",
       image: "/depoimentos/depoimento3.jpg"
     },
     {
-      name: "Luana",
-      text: "Adorei a estética... sempre compro em garrafa Pet e fica um grude só kkkkk esse não conheço",
+      name: "Cliente satisfeito",
+      text: "Adorei a estética 💜💜💜💜 sempre compro em garrafa Pet e fica um grude só kkkkk esse não conheço",
       rating: 5,
       product: "Óleo de babaçu",
       image: "/depoimentos/depoimento4.jpg"
     },
     {
-      name: "Profenoque",
-      text: "Os produtos são maravilhosos! 😊😊 amei",
+      name: "Clientes satisfeitos",
+      text: "Os produtos são maravilhosos! 😊😊 amei. Os produtos são uma delícia! 😊😊",
       rating: 5,
       product: "Produtos gerais",
       image: "/depoimentos/depoimentos5e6.jpg"
     },
     {
-      name: "Hatawma",
-      text: "Os produtos são uma delícia! 😊😊",
+      name: "Clientes satisfeitos",
+      text: "Disparado meu novo doce favorito 😍. Maravilhoso 😍😍😍. Esse doce é muitooo bom. O melhooooor 👏🔥😍",
       rating: 5,
-      product: "Produtos gerais",
-      image: "/depoimentos/depoimentos5e6.jpg"
+      product: "Doce de babaçu",
+      image: "/depoimentos/depoimento7.jpg"
     }
   ];
 
