@@ -16,7 +16,7 @@ const Testimonials = () => {
     },
     {
       name: "Cliente satisfeito",
-      text: "Professora Leanne me deu um doce de vcs e eu amei. Que maravilha ❤️. Já segui a página pra ficar de olho",
+      text: "Ganhei um doce de vocês e eu amei. Que maravilha ❤️. Já segui a página pra ficar de olho",
       rating: 5,
       product: "Doce de babaçu",
       image: "/depoimentos/depoimento3.jpg"
